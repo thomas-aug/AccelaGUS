@@ -2134,10 +2134,9 @@ function licenseProfObject(licnumber, lictype, vCapId) {
 
 function sendNotificationGUS(electricalId) {
 	logDebug("STARTED sendNotificationGUS() function...");
-	if (!appMatch("Building/Residential/Electrical/NA", electricalId)) return;
 
 	var notificationTemplate = "BUILDING_ELECTRICAL_GUS";
-	var fromEmail = "noreply@gus.com";
+	var fromEmail = "noreply@accela.com";
 	var toEmail = "augustin.ravin@ks.gov";
 
 	var eParams = aa.util.newHashtable();
