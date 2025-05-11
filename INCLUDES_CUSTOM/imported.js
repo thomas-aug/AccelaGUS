@@ -2133,6 +2133,7 @@ function licenseProfObject(licnumber, lictype, vCapId) {
 }
 
 function sendNotificationGUS(electricalId) {
+	logDebug("STARTED sendNotificationGUS() function...");
 	if (!appMatch("Building/Residential/Electrical/NA", electricalId)) return;
 
 	var notificationTemplate = "BUILDING_ELECTRICAL_GUS";
